@@ -2,3 +2,4 @@
 .vscode
 example_gtts.py
 speech.mp3
+__pycache__
