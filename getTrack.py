@@ -1,3 +1,4 @@
+#Este funcion recibe el texto limpio de la url y lo convierte a fichero de audio.mp3
 from gtts import gTTS
 import os
 
