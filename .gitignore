@@ -1,0 +1,4 @@
+#files without tracking
+.vscode
+example_gtts.py
+speech.mp3
