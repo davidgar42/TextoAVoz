@@ -2,8 +2,7 @@
 from gtts import gTTS
 import os
 
-pais = 'es'
-def text_to_speech(text, pais):
+def text_to_speech_es(text, pais):
     
     speech = gTTS(text, lang=pais, tld='es')
 

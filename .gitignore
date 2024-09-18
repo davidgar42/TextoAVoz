@@ -1,5 +1,7 @@
 #files without tracking
 .vscode
 example_gtts.py
-speech.mp3
+speech_eng.mp3
+speech_es.mp3
+speech_fr.mp3
 __pycache__
