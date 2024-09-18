@@ -13,18 +13,23 @@ from playsound import playsound  # para reproducir el archivo mp3 generado
 #url = 'https://www.elespanol.com/invertia/opinion/20240907/inclusion-financiera-progresa-adecuadamente/884031598_12.html'
 
 # Solicitando datos al usuario
-print(f"*****Bienvenido al convertidor de articulos a audio mp3******")
+print(f"*****Bienvenido al convertidor de articulos a audio mp3******\n")
 url = input("Pega la URL donde esta el articulo a convertir: ")
-pais = input("Introduce 'es' para Español o 'en' para ingles: ")
+pais = input("\nIntroduce 'es' para Español, 'en' para ingles o 'fr' para frances: ")
 
 # Enviando la dirección url a la funcion getText()
 text = getText(url)
-#print(text)
+
+#Envio del lenguaje a gtts para transcribir correctamente el audio
+
 if pais == 'es':
     track = text_to_speech_es(text, pais)
 elif pais == 'en':
     track = text_to_speech_eng(text, pais)
 elif pais == 'fr':
     track = text_to_speech_fr(text, pais)
+else:
+    print("Valor por defecto 'es'")
+    track = text_to_speech_es(text, 'es')
 
 #playsound(track)
