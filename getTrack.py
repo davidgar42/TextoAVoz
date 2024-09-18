@@ -2,11 +2,13 @@
 from gtts import gTTS
 import os
 
-def text_to_speech(text):
-    speech = gTTS(text=text, lang='es')
+pais = 'es'
+def text_to_speech(text, pais):
     
+    speech = gTTS(text, lang=pais, tld='es')
 
-    speech_file = 'speech.mp3'
+    # Save the audio file to a temporary file
+    speech_file = 'speech_es.mp3'
     speech.save(speech_file)
     
     return speech_file

@@ -7,6 +7,7 @@ from newspaper import Article
 def getText(url):
     article = Article(url)
     article.download()
+    ##Puede fallar al descargar el articulo
     article.parse()
     # Extract and print the desired data
     # print("**Headline:**", article.title)
