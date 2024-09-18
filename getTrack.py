@@ -9,6 +9,7 @@ def text_to_speech(text):
     # Save the audio file to a temporary file
     speech_file = 'speech.mp3'
     speech.save(speech_file)
+    
 
     # os.system('afplay ' + speech_file)
 
